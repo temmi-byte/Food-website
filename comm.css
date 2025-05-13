@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #f6f6f6 60%, rgb(7, 94, 7) 40%);
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to right, rgb(238, 233, 233) 60%, rgb(36, 77, 36) 40%);
+    position: relative;
+}
+
+/* LOGO */
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo span {
+    color: green;
+}
+
+/* NAVIGATION MENU */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: rgb(236, 235, 235);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    top: 100%;
+    left: 0;
+    padding: 10px;
+    list-style: none;
+    border-radius: 5px;
+}
+
+.dropdown-menu li {
+    padding: 8px 12px;
+}
+
+.dropdown-menu li a {
+    color: #333;
+    display: block;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* CONNECT WITH US */
+.connect a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 254, 254);
+}
+
+/* ICONS */
+.icons {
+    display: flex;
+    gap: 15px;
+    font-size: 1.2rem;
+    margin-right: 20px;
+}
+
+.icons i {
+    font-size: 1.4rem; /* Increase size */
+    font-weight: bold; /* Make it stronger */
+    color: rgba(255, 255, 255, 0.8); /* Make the icons clearer */
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.icons i:hover {
+    color: yellow; /* Change color on hover */
+    text-shadow: 0px 0px 10px rgba(255, 255, 0, 0.8); /* Add a glow effect */
+}
+
+
+/* MAIN CONTENT */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.content {
+    max-width: 500px;
+}
+
+h4 {
+    color: green;
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.stats {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .icons {
+        font-size: 1rem;
+    }
+
+    .content {
+        max-width: 90%;
+        text-align: center;
+    }
+}
